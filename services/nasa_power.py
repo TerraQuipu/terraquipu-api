@@ -68,3 +68,4 @@ def fetch_nasa_agroclimate(lat: float, lon: float) -> Dict[str, Any]:
         "heat_wave_days_expected": 14,
         "status": "cached_fallback"
     }
+

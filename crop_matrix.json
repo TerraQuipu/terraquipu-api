@@ -33,7 +33,7 @@
         "organic_matter_demand": "high",
         "pest_break_score": 1
       },
-      "favorable_successors": ["tarwi", "haba", "quinua"],
+      "favorable_successors": ["tarwi", "haba", "quinua", "cebada"],
       "unfavorable_successors": ["papa_nativa", "tomate"]
     },
     {
@@ -69,7 +69,7 @@
         "organic_matter_demand": "low",
         "pest_break_score": 5
       },
-      "favorable_successors": ["papa_nativa", "maiz", "cebada"],
+      "favorable_successors": ["papa_nativa", "maiz", "cebada", "quinua"],
       "unfavorable_successors": ["tarwi"]
     },
     {
@@ -107,7 +107,114 @@
       },
       "favorable_successors": ["tarwi", "haba", "papa_nativa"],
       "unfavorable_successors": ["quinua"]
+    },
+    {
+      "crop_id": "haba",
+      "common_name": "Haba Verde / Grano Seco",
+      "scientific_name": "Vicia faba",
+      "family": "Fabaceae (Leguminosa)",
+      "cycle_days": 160,
+      "water_requirement_mm": {
+        "min": 380,
+        "optimal": 520,
+        "max": 650
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 4.5,
+        "optimal_min": 9.0,
+        "optimal_max": 18.0,
+        "frost_tolerance": -3.5
+      },
+      "altitude_range_masl": {
+        "min": 2800,
+        "max": 3850
+      },
+      "soil_tolerance": {
+        "ph_min": 6.0,
+        "ph_optimal": 7.0,
+        "ph_max": 8.2,
+        "drainage": "good",
+        "salinity_tolerance": "moderate"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": 75,
+        "organic_matter_demand": "low",
+        "pest_break_score": 5
+      },
+      "favorable_successors": ["papa_nativa", "maiz", "quinua"],
+      "unfavorable_successors": ["haba", "arveja"]
+    },
+    {
+      "crop_id": "cebada",
+      "common_name": "Cebada Grano / Forraje",
+      "scientific_name": "Hordeum vulgare",
+      "family": "Poaceae",
+      "cycle_days": 130,
+      "water_requirement_mm": {
+        "min": 250,
+        "optimal": 380,
+        "max": 500
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 3.0,
+        "optimal_min": 7.0,
+        "optimal_max": 20.0,
+        "frost_tolerance": -5.0
+      },
+      "altitude_range_masl": {
+        "min": 3000,
+        "max": 4200
+      },
+      "soil_tolerance": {
+        "ph_min": 5.5,
+        "ph_optimal": 6.8,
+        "ph_max": 8.5,
+        "drainage": "moderate",
+        "salinity_tolerance": "high"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": -35,
+        "organic_matter_demand": "low",
+        "pest_break_score": 4
+      },
+      "favorable_successors": ["tarwi", "haba", "papa_nativa"],
+      "unfavorable_successors": ["cebada", "trigo"]
+    },
+    {
+      "crop_id": "maiz",
+      "common_name": "Maíz Blanco Gigante del Cusco",
+      "scientific_name": "Zea mays var. amylacea",
+      "family": "Poaceae",
+      "cycle_days": 190,
+      "water_requirement_mm": {
+        "min": 450,
+        "optimal": 600,
+        "max": 750
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 8.0,
+        "optimal_min": 12.0,
+        "optimal_max": 22.0,
+        "frost_tolerance": 0.0
+      },
+      "altitude_range_masl": {
+        "min": 2600,
+        "max": 3200
+      },
+      "soil_tolerance": {
+        "ph_min": 5.8,
+        "ph_optimal": 6.8,
+        "ph_max": 7.8,
+        "drainage": "good",
+        "salinity_tolerance": "moderate"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": -60,
+        "organic_matter_demand": "high",
+        "pest_break_score": 3
+      },
+      "favorable_successors": ["haba", "tarwi", "papa_nativa"],
+      "unfavorable_successors": ["maiz"]
     }
   ]
 }
-

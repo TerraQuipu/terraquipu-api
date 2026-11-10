@@ -31,3 +31,4 @@ def generate_rag_explanation(strategy_title: str, anomaly_percent: float, previo
         "summary": summary,
         "citations": INIA_CITATIONS
     }
+

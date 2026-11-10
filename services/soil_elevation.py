@@ -52,3 +52,4 @@ def fetch_elevation_and_soil(lat: float, lon: float) -> Dict[str, Any]:
         "slope_degrees": 8.5,
         "soil_profile": soil_profile
     }
+
