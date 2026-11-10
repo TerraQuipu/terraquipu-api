@@ -1,0 +1,113 @@
+{
+  "crops": [
+    {
+      "crop_id": "papa_nativa",
+      "common_name": "Papa Nativa (Variedad Huayro / Canchan)",
+      "scientific_name": "Solanum tuberosum andigenum",
+      "family": "Solanaceae",
+      "cycle_days": 150,
+      "water_requirement_mm": {
+        "min": 500,
+        "optimal": 650,
+        "max": 800
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 6.0,
+        "optimal_min": 10.0,
+        "optimal_max": 18.0,
+        "frost_tolerance": -1.5
+      },
+      "altitude_range_masl": {
+        "min": 2800,
+        "max": 4100
+      },
+      "soil_tolerance": {
+        "ph_min": 5.0,
+        "ph_optimal": 6.2,
+        "ph_max": 7.5,
+        "drainage": "good",
+        "salinity_tolerance": "low"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": -70,
+        "organic_matter_demand": "high",
+        "pest_break_score": 1
+      },
+      "favorable_successors": ["tarwi", "haba", "quinua"],
+      "unfavorable_successors": ["papa_nativa", "tomate"]
+    },
+    {
+      "crop_id": "tarwi",
+      "common_name": "Tarwi / Chocho",
+      "scientific_name": "Lupinus mutabilis",
+      "family": "Fabaceae (Leguminosa)",
+      "cycle_days": 180,
+      "water_requirement_mm": {
+        "min": 350,
+        "optimal": 500,
+        "max": 650
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 5.0,
+        "optimal_min": 8.0,
+        "optimal_max": 16.0,
+        "frost_tolerance": -3.0
+      },
+      "altitude_range_masl": {
+        "min": 2900,
+        "max": 3900
+      },
+      "soil_tolerance": {
+        "ph_min": 5.5,
+        "ph_optimal": 6.8,
+        "ph_max": 8.0,
+        "drainage": "moderate",
+        "salinity_tolerance": "moderate"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": 95,
+        "organic_matter_demand": "low",
+        "pest_break_score": 5
+      },
+      "favorable_successors": ["papa_nativa", "maiz", "cebada"],
+      "unfavorable_successors": ["tarwi"]
+    },
+    {
+      "crop_id": "quinua",
+      "common_name": "Quinua (Variedad Pasankalla / Salcedo INIA)",
+      "scientific_name": "Chenopodium quinoa",
+      "family": "Amaranthaceae",
+      "cycle_days": 140,
+      "water_requirement_mm": {
+        "min": 280,
+        "optimal": 400,
+        "max": 550
+      },
+      "thermal_limits_celsius": {
+        "base_temp": 4.0,
+        "optimal_min": 8.0,
+        "optimal_max": 20.0,
+        "frost_tolerance": -4.0
+      },
+      "altitude_range_masl": {
+        "min": 2500,
+        "max": 4000
+      },
+      "soil_tolerance": {
+        "ph_min": 5.0,
+        "ph_optimal": 6.5,
+        "ph_max": 8.5,
+        "drainage": "moderate",
+        "salinity_tolerance": "high"
+      },
+      "soil_impact": {
+        "nitrogen_balance_kg_ha": -25,
+        "organic_matter_demand": "moderate",
+        "pest_break_score": 4
+      },
+      "favorable_successors": ["tarwi", "haba", "papa_nativa"],
+      "unfavorable_successors": ["quinua"]
+    }
+  ]
+}
+

@@ -107,3 +107,4 @@ uvicorn main:app --reload --port 8000
 ```
 
 Documentación interactiva disponible en `http://localhost:8000/docs` (Swagger UI).
+
